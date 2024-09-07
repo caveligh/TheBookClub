@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # The Book Club
 
 The Book Club es una aplicación web desarrollada con Yii2 que permite a los usuarios gestionar y compartir información sobre libros, autores y calificaciones.
@@ -230,3 +231,7 @@ vendor/bin/codecept run functional,unit --coverage --coverage-html --coverage-xm
 ```
 
 Puede ver los resultados de la cobertura del código en el directorio `tests/_output`.
+=======
+# TheBookClub
+Portal Web con informacion de un Club de Lectores
+>>>>>>> e00630f918bb54ae060bd915307534acb1f424f4

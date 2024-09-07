@@ -20,7 +20,6 @@ The Book Club es una aplicación web desarrollada con Yii2 que permite a los usu
 ![All_Autores](https://i.ibb.co/HVbTM8T/autores.jpg "All_Autores")
 ![Autor](https://i.ibb.co/bFhBMX7/autor-145.jpg "Autor")
 
-
 ## Requisitos
 
 - PHP 7.4 o superior

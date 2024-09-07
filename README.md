@@ -11,14 +11,14 @@ The Book Club es una aplicación web desarrollada con Yii2 que permite a los usu
 - Búsqueda de libros y autores.
 
 ## Imagenes
-![Login](https://i.ibb.co/ftMhqsZ/login.jpg "Login")
-![Indice](https://i.ibb.co/ch8sWbW/index.jpg "Indice")
-![All_Books](https://i.ibb.co/LnYFyPR/books.jpg "All_Books")
-![Book_id](https://i.ibb.co/vBD54sB/book-203.jpg "Book_id")
-![Book_id_vote](https://i.ibb.co/4tJ8wrp/book-4-vote.jpg "Book_id_vote")
-![Book_id_point](https://i.ibb.co/fNVHzmt/book-4.jpg "Book_id_point")
-![All_Autores](https://i.ibb.co/HVbTM8T/autores.jpg "All_Autores")
-![Autor](https://i.ibb.co/bFhBMX7/autor-145.jpg "Autor")
+![Login](assets/login.jpg "Login")
+![Indice](assets/index.jpg "Indice")
+![All_Books](assets/books.jpg "All_Books")
+![Book_id](assets/book-203.jpg "Book_id")
+![Book_id_vote](assets/book-4-vote.jpg "Book_id_vote")
+![Book_id_point](assets/book-4.jpg "Book_id_point")
+![All_Autores](assets/autores.jpg "All_Autores")
+![Autor](assets/autor-145.jpg "Autor")
 
 ## Requisitos
 
@@ -43,8 +43,6 @@ The Book Club es una aplicación web desarrollada con Yii2 que permite a los usu
       vendor/       contiene paquetes dependientes de terceros
       views/        contiene archivos de vistas para la aplicación Web
       web/          contiene el script de entrada y los recursos Web
-      
-
 
 ## Requerimientos
 

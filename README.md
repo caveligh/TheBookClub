@@ -1,61 +1,61 @@
-<p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Basic Project Template</h1>
-    <br>
-</p>
+# The Book Club
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
-rapidly creating small projects.
+The Book Club es una aplicación web desarrollada con Yii2 que permite a los usuarios gestionar y compartir información sobre libros, autores y calificaciones.
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+## Características
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![build](https://github.com/yiisoft/yii2-app-basic/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-basic/actions?query=workflow%3Abuild)
+- Gestión de libros: Añadir, editar y eliminar libros.
+- Gestión de autores: Añadir, editar y eliminar autores.
+- Sistema de calificación: Los usuarios pueden calificar los libros.
+- Colección personal: Los usuarios pueden marcar libros como propios.
+- Búsqueda de libros y autores.
 
-DIRECTORY STRUCTURE
--------------------
+## Requisitos
 
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
+- PHP 7.4 o superior
+- MySQL 5.7 o superior
+- Composer
 
+## Instalación
 
+1. Clona el repositorio:
 
-REQUIREMENTS
-------------
+## Estructura del Directorio
 
-The minimum requirement by this project template that your Web server supports PHP 7.4.
+      assets/       contiene la definición de assets
+      commands/     contiene los comandos de la consola (controladores)
+      config/       contiene configuraciones de aplicaciones
+      controllers/  contiene clases de controladores Web
+      mail/         contiene archivos de vista para correos electrónicos
+      models/       contiene clases de modelos
+      runtime/      contiene archivos generados durante el tiempo de ejecución
+      tests/        contiene varios tests para la aplicación básica
+      vendor/       contiene paquetes dependientes de terceros
+      views/        contiene archivos de vistas para la aplicación Web
+      web/          contiene el script de entrada y los recursos Web
+      
 
 
-INSTALLATION
+## Requerimientos
+
+El requisito mínimo de esta plantilla de proyecto es que su servidor Web soporte PHP 7.4.
+
+
+## Installation
 ------------
 
 ### Install via Composer
 
-If you do not have [Composer](https://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](https://getcomposer.org/doc/00-intro.md#installation-nix).
+Si no dispone de [Composer](https://getcomposer.org/), puede instalarlo siguiendo las instrucciones
+en [getcomposer.org](https://getcomposer.org/doc/00-intro.md#installation-nix).
 
-You can then install this project template using the following command:
+A continuación, puede instalar esta plantilla de proyecto utilizando el siguiente comando:
 
 ~~~
 composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 ~~~
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
+Ahora deberías poder acceder a la aplicación a través de la siguiente URL, asumiendo que `basic` es el directorio directamente bajo la raíz Web.
 
 ~~~
 http://localhost/basic/web/
@@ -63,10 +63,9 @@ http://localhost/basic/web/
 
 ### Install from an Archive File
 
-Extract the archive file downloaded from [yiiframework.com](https://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
+Extraiga el archivo descargado de [yiiframework.com](https://www.yiiframework.com/download/) a un directorio llamado `basic` que esté directamente bajo la raíz de la Web.
 
-Set cookie validation key in `config/web.php` file to some random secret string:
+Establezca la clave de validación de cookies en el archivo `config/web.php` en una cadena secreta aleatoria:
 
 ```php
 'request' => [
@@ -75,7 +74,7 @@ Set cookie validation key in `config/web.php` file to some random secret string:
 ],
 ```
 
-You can then access the application through the following URL:
+A continuación, puede acceder a la aplicación a través de la siguiente URL:
 
 ~~~
 http://localhost/basic/web/
@@ -84,33 +83,33 @@ http://localhost/basic/web/
 
 ### Install with Docker
 
-Update your vendor packages
+Actualice sus paquetes de proveedores
 
     docker-compose run --rm php composer update --prefer-dist
     
-Run the installation triggers (creating cookie validation code)
+Ejecute los activadores de instalación (creación de código de validación de cookies)
 
     docker-compose run --rm php composer install    
     
-Start the container
+Iniciar el contenedor
 
     docker-compose up -d
     
-You can then access the application through the following URL:
+A continuación, puede acceder a la aplicación a través de la siguiente URL:
 
     http://127.0.0.1:8000
 
-**NOTES:** 
-- Minimum required Docker engine version `17.04` for development (see [Performance tuning for volume mounts](https://docs.docker.com/docker-for-mac/osxfs-caching/))
-- The default configuration uses a host-volume in your home directory `.docker-composer` for composer caches
+**NOTAS:** 
+- Versión mínima requerida del motor Docker `17.04` para el desarrollo (véase [Performance tuning for volume mounts](https://docs.docker.com/docker-for-mac/osxfs-caching/))
+- La configuración por defecto utiliza un host-volumen en su directorio home `.docker-composer` para las cachés de composer
 
 
-CONFIGURATION
+## Configuration
 -------------
 
 ### Database
 
-Edit the file `config/db.php` with real data, for example:
+Edite el archivo `config/db.php` con datos reales, por ejemplo:
 
 ```php
 return [
@@ -122,55 +121,54 @@ return [
 ];
 ```
 
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
+**NOTAS:**
+- Yii no creará la base de datos por ti, esto tiene que hacerse manualmente antes de que puedas acceder a ella.
+- Compruebe y edite los demás archivos del directorio `config/` para personalizar su aplicación según sea necesario.
+- Consulte el archivo README del directorio `tests` para obtener información específica sobre las pruebas de aplicaciones básicas.
 
 
-TESTING
--------
+## Pruebas
 
-Tests are located in `tests` directory. They are developed with [Codeception PHP Testing Framework](https://codeception.com/).
-By default, there are 3 test suites:
+Las pruebas se encuentran en el directorio `tests`. Se desarrollan con [Codeception PHP Testing Framework](https://codeception.com/). 
+Por defecto, hay 3 conjuntos de pruebas:
 
 - `unit`
 - `functional`
 - `acceptance`
 
-Tests can be executed by running
+Las pruebas pueden ejecutarse ejecutando
 
 ```
 vendor/bin/codecept run
 ```
 
-The command above will execute unit and functional tests. Unit tests are testing the system components, while functional
-tests are for testing user interaction. Acceptance tests are disabled by default as they require additional setup since
-they perform testing in real browser. 
+El comando anterior ejecutará pruebas unitarias y funcionales. 
+Las pruebas unitarias prueban los componentes del sistema, mientras que las pruebas funcionales 
+prueban la interacción con el usuario. Las pruebas de aceptación están deshabilitadas por defecto 
+ya que requieren una configuración adicional puesto que realizan pruebas en el navegador real.
 
 
-### Running  acceptance tests
+### Ejecución de pruebas de aceptación
 
-To execute acceptance tests do the following:  
+Para ejecutar pruebas de aceptación haga lo siguiente: 
 
-1. Rename `tests/acceptance.suite.yml.example` to `tests/acceptance.suite.yml` to enable suite configuration
+1. Cambie el nombre de `tests/acceptance.suite.yml.example` a `tests/acceptance.suite.yml` para activar la configuración de la suite
 
-2. Replace `codeception/base` package in `composer.json` with `codeception/codeception` to install full-featured
-   version of Codeception
+2. Sustituir `codeception/base` paquete en `composer.json` con `codeception/codeception` para instalar la versión completa de Codeception
 
-3. Update dependencies with Composer 
+3. Actualizar dependencias con Composer 
 
     ```
     composer update  
     ```
 
-4. Download [Selenium Server](https://www.seleniumhq.org/download/) and launch it:
+4. Descargar [Selenium Server](https://www.seleniumhq.org/download/) y lánzarlo:
 
     ```
     java -jar ~/selenium-server-standalone-x.xx.x.jar
     ```
 
-    In case of using Selenium Server 3.0 with Firefox browser since v48 or Google Chrome since v53 you must download [GeckoDriver](https://github.com/mozilla/geckodriver/releases) or [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and launch Selenium with it:
+    En caso de utilizar Selenium Server 3.0 con el navegador Firefox desde v48 o Google Chrome desde v53 debe descargar [GeckoDriver](https://github.com/mozilla/geckodriver/releases) or [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) y lanzar Selenium con él:
 
     ```
     # for Firefox
@@ -180,28 +178,28 @@ To execute acceptance tests do the following:
     java -jar -Dwebdriver.chrome.driver=~/chromedriver ~/selenium-server-standalone-3.xx.x.jar
     ``` 
     
-    As an alternative way you can use already configured Docker container with older versions of Selenium and Firefox:
+    Como alternativa se puede utilizar un contenedor Docker ya configurado con versiones anteriores de Selenium y Firefox:
     
     ```
     docker run --net=host selenium/standalone-firefox:2.53.0
     ```
 
-5. (Optional) Create `yii2basic_test` database and update it by applying migrations if you have them.
+5. (Opcional) Crea la base de datos `yii2basic_test` y actualizala aplicando migraciones si las tienes.
 
    ```
    tests/bin/yii migrate
    ```
 
-   The database configuration can be found at `config/test_db.php`.
+   La configuración de la base de datos se encuentra en `config/test_db.php`.
 
 
-6. Start web server:
+6. Inicie el servidor web:
 
     ```
     tests/bin/yii serve
     ```
 
-7. Now you can run all available tests
+7. Ahora puede ejecutar todas las pruebas disponibles
 
    ```
    # run all available tests
@@ -214,10 +212,11 @@ To execute acceptance tests do the following:
    vendor/bin/codecept run unit,functional
    ```
 
-### Code coverage support
+### Cobertura del código
 
-By default, code coverage is disabled in `codeception.yml` configuration file, you should uncomment needed rows to be able
-to collect code coverage. You can run your tests and collect coverage with the following command:
+Por defecto, la cobertura de código está desactivada en el archivo de configuración `codeception.yml`, 
+debe descomentar las filas necesarias para poder recopilar la cobertura de código. 
+Puede ejecutar sus pruebas y recopilar la cobertura con el siguiente comando:
 
 ```
 #collect coverage for all tests
@@ -230,4 +229,4 @@ vendor/bin/codecept run unit --coverage --coverage-html --coverage-xml
 vendor/bin/codecept run functional,unit --coverage --coverage-html --coverage-xml
 ```
 
-You can see code coverage output under the `tests/_output` directory.
+Puede ver los resultados de la cobertura del código en el directorio `tests/_output`.

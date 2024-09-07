@@ -5,6 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name' => 'The Book Club',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -37,19 +38,39 @@ $config = [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'logFile' => '@runtime/logs/app.log',
+                    'levels' => ['error', 'warning', 'info'],
                 ],
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '' => 'site/index',
+                'books' => 'book/all',
+                'book/new' => 'book/new', 
+                'book/score' => 'book/score',
+                'book/<id:\d+>' => 'book/detail',
+                'book/i-on-this-book/<book_id:\d+>' => 'book/i-own-this-book',
+                'authors' => 'author/all',
+                'authors/new' => 'authors/new',
+                'author/search/<search:\w+>' => 'author/all',
+                'author/<id:\d+>' => 'author/detail'           
             ],
         ],
-        */
+        'view' => [
+            'renderers' => [
+                'tpl' => [
+                    'class' => 'yii\smarty\ViewRenderer',
+                    'options' => [
+                        'left_delimiter' => '{',
+                        'right_delimiter' => '}',
+                    ],
+                ],
+            ],
+        ],   
     ],
     'params' => $params,
 ];

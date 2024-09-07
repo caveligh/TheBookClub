@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # The Book Club
 
 The Book Club es una aplicación web desarrollada con Yii2 que permite a los usuarios gestionar y compartir información sobre libros, autores y calificaciones.
@@ -10,6 +9,16 @@ The Book Club es una aplicación web desarrollada con Yii2 que permite a los usu
 - Sistema de calificación: Los usuarios pueden calificar los libros.
 - Colección personal: Los usuarios pueden marcar libros como propios.
 - Búsqueda de libros y autores.
+
+## Imagenes
+![Login](https://i.ibb.co/ftMhqsZ/login.jpg "Login")
+![Indice](https://i.ibb.co/ch8sWbW/index.jpg "Indice")
+![All_Books](https://i.ibb.co/LnYFyPR/books.jpg "All_Books")
+![Book_id](https://i.ibb.co/vBD54sB/book-203.jpg "Book_id")
+![Book_id_vote](https://i.ibb.co/4tJ8wrp/book-4-vote.jpg "Book_id_vote")
+![Book_id_point](https://i.ibb.co/fNVHzmt/book-4.jpg "Book_id_point")
+![All_Autores](https://i.ibb.co/HVbTM8T/autores.jpg "All_Autores")
+![Autor](https://i.ibb.co/bFhBMX7/autor-145.jpg "Autor")
 
 ## Requisitos
 

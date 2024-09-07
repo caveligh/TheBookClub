@@ -15,10 +15,10 @@ The Book Club es una aplicación web desarrollada con Yii2 que permite a los usu
 ![Indice](assets/index.jpg "Indice")
 ![All_Books](assets/books.jpg "All_Books")
 ![Book_id](assets/book-203.jpg "Book_id")
-![Book_id_vote](assets/book-4-vote.jpg "Book_id_vote")
-![Book_id_point](assets/book-4.jpg "Book_id_point")
+![Book_id_vote](assets/book_4_vote.jpg "Book_id_vote")
+![Book_id_point](assets/book_4.jpg "Book_id_point")
 ![All_Autores](assets/autores.jpg "All_Autores")
-![Autor](assets/autor-145.jpg "Autor")
+![Autor](assets/autor_145.jpg "Autor")
 
 ## Requisitos
 
